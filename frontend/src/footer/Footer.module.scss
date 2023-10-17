@@ -1,0 +1,26 @@
+@import '../styles/variables.scss';
+
+.footer_wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer {
+    width: 80vw;
+}
+
+@media screen and (min-width: 768px) {
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .footer {
+        display: flex;
+        justify-content: space-around;
+    }
+}

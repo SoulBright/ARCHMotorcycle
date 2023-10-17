@@ -1,0 +1,15 @@
+@import '~normalize.css';
+@import '../styles/variables.scss';
+
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+body {
+    color: $font-light-color;
+    background: $background-color;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
