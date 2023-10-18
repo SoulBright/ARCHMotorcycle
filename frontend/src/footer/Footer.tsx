@@ -29,6 +29,11 @@ export const Footer: React.FC<IFooterProps> = (props) => {
           </FooterItems>
         </div>
       </div>
+      <div className={s.footer_info_wrapper}>
+        <div className={s.footer_info}>
+          © 2023 pet project disigned by Soul Bright
+        </div>
+      </div>
     </footer>
   );
 };

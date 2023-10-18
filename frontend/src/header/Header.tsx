@@ -23,6 +23,7 @@ export const Header: React.FC<IHeaderProps> = (props) => {
         </div>
         <MenuIco className={s.menu_ico} onClick={() => setModalMenuIsOpen(true)} />
       </div>
+      
       <MenuModal
         isOpen={modalMenuIsOpen}
         onClose={() => setModalMenuIsOpen(false)}

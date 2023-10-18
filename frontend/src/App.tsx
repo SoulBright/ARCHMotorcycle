@@ -3,10 +3,12 @@ import { Header } from './header/Header';
 import { Footer } from './footer/Footer';
 import { Home } from './pages/home/Home';
 
+import './styles/index.scss'
+
 function App() {
   return (
     <div className="App">
-      <Header />
+        <Header />
       <Home />
       <Footer />
     </div>

@@ -1,0 +1,39 @@
+@import '../../../../styles/variables.scss';
+
+.preview_wrapper {
+    position: relative
+}
+
+.preview_container {
+    padding: 35px 0 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.title {
+    width: 80vw;
+    font-size: clamp(24px, 4vw, 42px);
+    font-weight: 900;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+img {
+    width: 100vw;
+}
+
+.preview_footer {
+    font-size: clamp(24px, 4vw, 42px);
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .preview_footer {}
+}
+
+@media screen and (min-width: 980px) {}

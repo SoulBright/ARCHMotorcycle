@@ -1,15 +1,12 @@
 @import '../styles/variables';
 
-header {
-    position: sticky;
-}
-
 .header_wrapper {
     position: relative;
     height: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: $background-color;
 }
 
 .logo_container {
@@ -65,6 +62,6 @@ header {
 
 @media screen and (min-width: 1750px) {
     .menu_ico {
-        right: 18vw;
+        right: 20vw;
     }
 }

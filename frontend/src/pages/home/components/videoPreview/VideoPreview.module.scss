@@ -5,6 +5,18 @@ video {
 };
 
 .play_button {
-    width: 32px;
+    width: 3vw;
     height: auto;
+    cursor: pointer;
 };
+
+.wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    position: absolute;
+}
