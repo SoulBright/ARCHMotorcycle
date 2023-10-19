@@ -8,7 +8,7 @@ import './styles/index.scss'
 function App() {
   return (
     <div className="App">
-        <Header />
+      <Header />
       <Home />
       <Footer />
     </div>
