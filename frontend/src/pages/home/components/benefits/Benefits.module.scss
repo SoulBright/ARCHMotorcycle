@@ -1,0 +1,73 @@
+@import '../../../../styles/variables.scss';
+
+.darkTheme {
+    background-color: $background-color;
+    margin: 30px 0;
+
+    h3 {
+        color: $font-light-color;
+    }
+
+    span {
+        color: $font-light-color;
+    }
+}
+
+.lightTheme {
+    background-color: $background-color-light;
+    margin: 30px 0;
+
+    h3 {
+        color: $font-dark-color;
+    }
+
+    span {
+        color: $font-dark-color;
+    }
+}
+
+.wrapper {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    padding: 8px 35px 0;
+    margin-bottom: 30px;
+}
+
+.content {
+    h3 {
+        font-size: 21px;
+        font-weight: 900;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+    }
+
+    span {
+        font-weight: 400;
+    }
+}
+
+.benefits_img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.btn_w {
+    margin-left: 35px;
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 8px 70px 0;
+    };
+
+    .btn_w {
+        margin-left: 70px;
+    }
+}

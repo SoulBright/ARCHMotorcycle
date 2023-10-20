@@ -13,9 +13,9 @@ export const ModelRangeItems: React.FC<IModelRangeItemsProps> = ({file_name, alt
     <div>
       <div className={s.wrapper}>
         <div className={s.img_container}>
-          <img src={process.env.PUBLIC_URL + `/images/${file_name}`} alt={alt}></img>
+          <img className={s.mr_img} src={process.env.PUBLIC_URL + `/images/model/${file_name}`} alt={alt}></img>
         </div>
-        <MyButton />
+        <MyButton theme='dark'/>
       </div>
     </div>
   );
