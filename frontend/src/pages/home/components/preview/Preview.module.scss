@@ -10,30 +10,28 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
+    img {
+        width: 100%;
+    }
 }
 
 .title {
     width: 80vw;
+    font-family: Georgia !important;
     font-size: clamp(24px, 4vw, 42px);
     font-weight: 900;
     text-align: center;
     padding-bottom: 10px;
 }
 
-img {
-    width: 100vw;
-}
-
 .preview_footer {
+    font-family: 'Eurostile-extended';
     font-size: clamp(24px, 4vw, 42px);
     font-weight: 900;
     text-align: center;
     text-transform: uppercase;
     padding-bottom: 10px;
-}
-
-@media screen and (min-width: 768px) {
-    .preview_footer {}
 }
 
 @media screen and (min-width: 980px) {}

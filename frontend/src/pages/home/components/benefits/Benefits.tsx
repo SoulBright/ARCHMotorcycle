@@ -1,7 +1,8 @@
 import * as React from 'react';
 
-import s from './Benefits.module.scss'
 import { MyButton } from '../../../../UI/button/MyButton';
+
+import s from './Benefits.module.scss'
 
 interface IBenefitsProps {
     theme: 'dark' | 'light',
@@ -33,15 +34,15 @@ export const Benefits: React.FC<IBenefitsProps> = (props) => {
     return (
         <div className={`${wrapperClassName}`}>
             <div className={s.wrapper}>
-                <img className={s.benefits_img} src={imgSrc} alt={props.alt} />
-                <div className={s.container}>
-                    <div className={s.content}>
-                        <h3>{props.title}</h3>
-                        <span>{props.content}</span>
-                    </div>
+                <div className={s.img_container}>
+                    <img src={imgSrc} alt={props.alt} />
                 </div>
-                <div className={s.btn_w}>
-                    <MyButton theme={props.theme} />
+                <div className={s.container}>
+                    <h3>{props.title}</h3>
+                    <span>{props.content}</span>
+                    <div className={s.btn_w}>
+                        <MyButton theme={props.theme} />
+                    </div>
                 </div>
             </div>
         </div>
