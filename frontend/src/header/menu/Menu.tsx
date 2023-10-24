@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { TypeMenu } from '../../types'
 
-import s from './Menu.module.scss'
+import s from './Menu.module.scss';
 
 
-interface IMenuProps { }
+interface IMenuProps {};
 
 export const Menu: React.FC<IMenuProps> = (props) => {
   const menuItems: TypeMenu[] = [
@@ -68,7 +68,7 @@ export const Menu: React.FC<IMenuProps> = (props) => {
       serial_number: 10,
       url: 'http://localhost:3000/'
     },
-  ]
+  ];
   return (
     <nav>
       <div className={s.menu}>

@@ -10,41 +10,14 @@ import { ModelRange } from './components/modelRange/ModelRange';
 import { Benefits } from './components/benefits/Benefits';
 import { MadeIn } from './components/madeIn/MadeIn';
 import { Apparel } from './components/apparel/Apparel';
+import { ScrollToTop } from '../../UI/scrollToTop/ScrollToTop';
 
-interface IHomeProps { }
+interface IHomeProps {};
 
 export const Home: React.FC<IHomeProps> = (props) => {
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const toTopElement = document.querySelector(`.${s.to_top}`);
-      if (toTopElement) {
-        if (window.scrollY > 700) {
-          toTopElement.classList.add(s.show);
-        } else {
-          toTopElement.classList.remove(s.show);
-        }
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  };
-
   return (
     <div>
-      <div className={s.to_top} onClick={scrollToTop} >
-        <ToTopIco className={s.to_top_ico} />
-      </div>
+      <ScrollToTop />
       <VideoComponent
         video='https://www.youtube.com/embed/2Qj1X1eJkqs?si=Mhf2tO21Q6sUtVR6'
         background='ARCH_Homepage_Video.mp4' />

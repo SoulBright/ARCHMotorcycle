@@ -4,40 +4,40 @@
 @font-face {
     font-family: 'Eurostile-extended';
     src: url('../assets/eurostile_extended_black.ttf');
-}
+};
 
 @font-face {
     font-family: 'Roboto-medium';
     src: url('../assets/Roboto-Medium.ttf');
-}
+};
 
 *, *:after, *:before {
     box-sizing: border-box;
-}
+};
 
 #root {
     font-family: 'Roboto-medium';
-}
+};
 
 body {
     color: $font-light-color;
     background: $background-color;
-}
+};
 
 h1, h2, h3, h4 {
     margin: 0;
-}
+};
 
 button {
     font-family: 'Roboto',Helvetica,Arial,Lucida,sans-serif;
-}
+};
 
 .App {
     position: relative;
-}
+};
 
 Header {
     position: sticky;
     top: 0;
     z-index: 9999;
-}
+};

@@ -1,11 +1,11 @@
 import * as React from 'react';
 
-import s from './FooterItems.module.scss'
+import s from './FooterItems.module.scss';
 
 interface IFooterItemsProps {
     title: string,
     children: React.ReactNode,
-}
+};
 
 export const FooterItems: React.FC<IFooterItemsProps> = ({title, children}) => {
     return (

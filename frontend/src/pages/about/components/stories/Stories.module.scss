@@ -1,21 +1,42 @@
 @import '../../../../styles/variables.scss';
 
+.darkTheme {
+    background-color: $background-color;
+    position: relative;
+
+    h3 {
+        color: $font-light-color;
+    };
+
+    span {
+        color: $font-light-color;
+    };
+};
+
+.lightTheme {
+    background-color: $background-color-light;
+    position: relative;
+
+    h3 {
+        color: $font-dark-color;
+    };
+
+    span {
+        color: $font-dark-color;
+    };
+};
+
 .wrapper {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-};
+    overflow-x: hidden;
 
-.container {
-    position: relative;
-    width: 100%;
-    color: $font-dark-color;
-    background-color: $background-color-light;
 };
 
 .img_container {
     position: relative;
-    width: 100%;
+    overflow-x: hidden;
 
     img {
         width: 100%;
@@ -23,7 +44,9 @@
     };
 };
 
-.content {
+
+
+.container {
     padding: 8px 35px 0;
     margin-bottom: 30px;
 
@@ -41,13 +64,10 @@
         letter-spacing: 1px;
     };
 
-    .btn_w {
-        margin: 30px 0 30px;
-    };
 };
 
 @media screen and (min-width: 768px) {
-    .content {
+    .container {
         padding: 8px 70px 0;
     };
 };
@@ -60,13 +80,12 @@
     };
 
     .img_container {
-        width: 100%;
+        width: 100vw;
         height: 927px;
         padding: 0;
         display: flex;
         justify-content: center;
         align-items: center;
-        overflow: hidden;
 
         img {
             height: 100%;
@@ -76,11 +95,11 @@
         };
     };
 
-    .content {
+    .container {
         padding: 0;
         position: absolute;
         width: 20%;
         top: 10%;
-        left: 10%;
+        left: 60%;
     };
 };

@@ -1,11 +1,10 @@
 import * as React from 'react';
 
-import s from './Footer.module.scss'
+import s from './Footer.module.scss';
 import { FooterItems } from './footerItems/FooterItems';
 import { SocialItems } from './socialItems/SocialItems';
 
-interface IFooterProps {
-}
+interface IFooterProps {};
 
 export const Footer: React.FC<IFooterProps> = (props) => {
   return (

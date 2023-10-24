@@ -3,12 +3,12 @@ import { useState } from 'react';
 
 import { ReactComponent as PlayButton } from './play-button_icon.svg';
 
-import s from './VideoComponent.module.scss'
+import s from './VideoComponent.module.scss';
 
 interface IVideoComponentProps {
     video: string,
     background: string,
-}
+};
 
 export const VideoComponent: React.FC<IVideoComponentProps> = ({video, background}) => {
     const [isVideoPlaying, setIsVideoPlaying] = useState(false);

@@ -1,8 +1,8 @@
 import * as React from 'react';
 
-import s from './MadeIn.module.scss'
+import s from './MadeIn.module.scss';
 
-interface IMadeInProps { }
+interface IMadeInProps {};
 
 export const MadeIn: React.FC<IMadeInProps> = (props) => {
     return (

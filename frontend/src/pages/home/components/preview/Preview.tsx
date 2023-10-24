@@ -1,9 +1,8 @@
 import * as React from 'react';
 
-import s from './Preview.module.scss'
+import s from './Preview.module.scss';
 
-interface IPreviewProps {
-}
+interface IPreviewProps {};
 
 export const Preview: React.FC<IPreviewProps> = (props) => {
     return (

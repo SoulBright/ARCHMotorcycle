@@ -6,9 +6,9 @@ import { Menu } from './menu/Menu';
 import { ReactComponent as MenuIco } from './menu_burger_icon.svg';
 
 import s from './Header.module.scss';
-import '../styles/variables.scss'
+import '../styles/variables.scss';
 
-interface IHeaderProps { }
+interface IHeaderProps {};
 
 export const Header: React.FC<IHeaderProps> = (props) => {
   const [modalMenuIsOpen, setModalMenuIsOpen] = useState(false)

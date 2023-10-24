@@ -1,10 +1,11 @@
 @import '../../styles/variables.scss';
 
 .footer_items {
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 200;
     margin-bottom: 32px;
     display: block;
-}
+};
 
 .title {
     color: $font-red-color;

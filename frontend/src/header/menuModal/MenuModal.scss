@@ -10,7 +10,7 @@
     opacity: 0;
     transition: opacity 2s;
     z-index: 999;
-}
+};
 
 .modal_wrapper {
     position: absolute;
@@ -21,11 +21,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
+};
 
 .modal_close_button * {
     fill: $ico-light-color;
-}
+};
 
 .modal_close_button {
     position: absolute;
@@ -33,23 +33,23 @@
     right: 20px;
     width: 56px;
     cursor: pointer;
-}
+};
 
 .modal_content {
     position: relative;
     height: 100%;
-}
+};
 
 /* open */
 
 .modal--entering,
 .modal--entered {
     opacity: 1;
-}
+};
 
 /* close */
 
 .modal--exiting,
 .modal--exited {
     opacity: 0;
-}
+};

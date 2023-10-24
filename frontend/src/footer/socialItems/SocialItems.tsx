@@ -1,15 +1,14 @@
 import * as React from 'react';
-import { TypeSocialItems } from '../../types'
+import { TypeSocialItems } from '../../types';
 
 import { ReactComponent as FacebookIcon } from './icons/Facebook_icon.svg';
 import { ReactComponent as InstagramIcon } from './icons/instagram_icon.svg';
 import { ReactComponent as YoutubeIcon } from './icons/YOUTUBE_icon.svg';
-import { ReactComponent as XIcon } from './icons/x_icon.svg'
+import { ReactComponent as XIcon } from './icons/x_icon.svg';
 
-import s from './SocaialItema.module.scss'
+import s from './SocaialItema.module.scss';
 
-interface ISocialItemsProps {
-}
+interface ISocialItemsProps {};
 
 export const SocialItems: React.FC<ISocialItemsProps> = (props) => {
     const SocialItems: TypeSocialItems[] = [
@@ -37,7 +36,7 @@ export const SocialItems: React.FC<ISocialItemsProps> = (props) => {
             svg: <XIcon />,
             url: 'https://twitter.com/archmotorcycle/',
         },
-    ]
+    ];
     return (
         <div>
             <div className={s.social}>

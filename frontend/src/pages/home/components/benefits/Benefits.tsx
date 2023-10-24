@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import { MyButton } from '../../../../UI/button/MyButton';
 
-import s from './Benefits.module.scss'
+import s from './Benefits.module.scss';
 
 interface IBenefitsProps {
     theme: 'dark' | 'light',
@@ -11,7 +11,7 @@ interface IBenefitsProps {
     alt: string,
     title: string,
     content: string,
-}
+};
 
 export const Benefits: React.FC<IBenefitsProps> = (props) => {
     const [isMobile, setIsMobile] = React.useState(window.innerWidth < 980);
@@ -41,7 +41,7 @@ export const Benefits: React.FC<IBenefitsProps> = (props) => {
                     <h3>{props.title}</h3>
                     <span>{props.content}</span>
                     <div className={s.btn_w}>
-                        <MyButton theme={props.theme} />
+                        <MyButton theme={props.theme}>DISCOVER MORE</MyButton>
                     </div>
                 </div>
             </div>

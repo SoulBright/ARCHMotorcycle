@@ -19,7 +19,9 @@ export const Apparel: React.FC<IApparelProps> = (props) => {
                         Check out the complete line of genuine ARCH Motorcycle apparel.
                     </span>
                     <div className={s.btn_w}>
-                        <MyButton theme='dark' />
+                        <MyButton theme='dark'>
+                            <a href="https://apparel.archmotorcycle.com/">DISCOVER MORE</a>
+                        </MyButton>
                     </div>
                 </div>
             </div>

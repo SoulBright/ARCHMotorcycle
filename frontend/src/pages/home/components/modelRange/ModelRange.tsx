@@ -1,10 +1,9 @@
 import * as React from 'react';
 
-import s from './modelRange.module.scss'
+import s from './modelRange.module.scss';
 import { ModelRangeItems } from './modelRangeItems/ModelRangeItems';
 
-interface IModelRangeProps {
-}
+interface IModelRangeProps {};
 
 export const ModelRange: React.FC<IModelRangeProps> = (props) => {
   return (

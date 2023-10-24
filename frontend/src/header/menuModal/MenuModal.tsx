@@ -3,13 +3,13 @@ import { Transition } from 'react-transition-group';
 
 import { ReactComponent as IconClose } from './cross_icon.svg';
 
-import './MenuModal.scss'
+import './MenuModal.scss';
 
 interface IMenuModalProps {
     isOpen: boolean,
     onClose: (value: React.SetStateAction<boolean>) => void,
     children: React.ReactNode,
-}
+};
 
 export const MenuModal: React.FC<IMenuModalProps> = ({ isOpen, onClose, children }) => {
     return (
