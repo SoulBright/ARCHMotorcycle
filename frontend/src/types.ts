@@ -10,5 +10,11 @@ export type TypeSocialItems = {
     title: string;
     svg: JSX.Element;
     url: string;
+};
 
+export type TypePhilosophyItems = {
+    id: number;
+    title: string;
+    content: string;
+    file_name: string;
 };

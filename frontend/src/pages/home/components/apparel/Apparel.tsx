@@ -11,7 +11,7 @@ export const Apparel: React.FC<IApparelProps> = (props) => {
         <div className={s.wrapper}>
             <div className={s.container}>
                 <div className={s.img_container}>
-                    <img src={process.env.PUBLIC_URL + '/images/Apparel.jpg'} alt="Californian-dreaming" />
+                    <img src={process.env.PUBLIC_URL + '/images/home/Apparel.jpg'} alt="Californian-dreaming" />
                 </div>
                 <div className={s.content}>
                     <h3>Apparel</h3>

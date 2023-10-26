@@ -7,12 +7,12 @@
 
     h3 {
         color: $font-light-color;
-    };
+    }
 
     span {
         color: $font-light-color;
-    };
-};
+    }
+}
 
 .lightTheme {
     background-color: $background-color-light;
@@ -21,12 +21,12 @@
 
     h3 {
         color: $font-dark-color;
-    };
+    }
 
     span {
         color: $font-dark-color;
-    };
-};
+    }
+}
 
 .wrapper {
     position: relative;
@@ -34,7 +34,7 @@
     flex-wrap: wrap;
     overflow-x: hidden;
 
-};
+}
 
 .img_container {
     position: relative;
@@ -43,8 +43,8 @@
     img {
         width: 100%;
         margin-bottom: 30px;
-    };
-};
+    }
+}
 
 
 
@@ -58,31 +58,31 @@
         font-weight: 900;
         text-transform: uppercase;
         padding-bottom: 10px;
-    };
+    }
 
     span {
         font-weight: 200;
         line-height: 1.4em;
         letter-spacing: 1px;
-    };
+    }
 
     .btn_w {
         margin: 30px 0 30px;
-    };
-};
+    }
+}
 
 @media screen and (min-width: 768px) {
     .container {
         padding: 8px 70px 0;
-    };
-};
+    }
+}
 
 @media screen and (min-width: 980px) {
     .container {
         h3 {
             font-size: 30px;
-        };
-    };
+        }
+    }
 
     .img_container {
         width: 100vw;
@@ -97,8 +97,8 @@
             margin: 0;
             object-fit: cover;
             object-position: center;
-        };
-    };
+        }
+    }
 
     .container {
         padding: 0;
@@ -106,5 +106,5 @@
         width: 20%;
         bottom: 10%;
         left: 65%;
-    };
-};
+    }
+}

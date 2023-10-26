@@ -1,0 +1,54 @@
+@import '../../../../../styles/variables.scss';
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+.container {
+    position: relative;
+    width: 80%;
+    margin-bottom: 30px;
+    color: $font-dark-color;
+
+    h3 {
+        font-family: 'Eurostile-extended';
+        font-size: 21px;
+        font-weight: 900;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+    }
+
+    span {
+        font-weight: 200;
+        line-height: 1.4em;
+        letter-spacing: 1px;
+    }
+}
+
+@media screen and (min-width: 981px) {
+    .wrapper {
+        flex-direction: row;
+
+        img {
+            width: 40%;
+            align-items: start;
+            margin-bottom: 0;
+            padding-left: 5%;
+        }
+    }
+
+    .container {
+        width: 40%;
+        align-items: end;
+    }
+}

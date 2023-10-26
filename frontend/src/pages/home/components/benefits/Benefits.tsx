@@ -29,7 +29,7 @@ export const Benefits: React.FC<IBenefitsProps> = (props) => {
     }, []);
 
     const wrapperClassName = `${s.wrapper} ${props.theme === 'dark' ? s.darkTheme : s.lightTheme}`;
-    const imgSrc = `${process.env.PUBLIC_URL}/images/benefits/${isMobile ? props.file_name_m : props.file_name_l}`;
+    const imgSrc = `${process.env.PUBLIC_URL}/images/home/benefits/${isMobile ? props.file_name_m : props.file_name_l}`;
 
     return (
         <div className={`${wrapperClassName}`}>

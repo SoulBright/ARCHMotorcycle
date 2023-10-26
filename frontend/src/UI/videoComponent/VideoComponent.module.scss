@@ -2,14 +2,14 @@
 
 video {
     width: 100%;
-};
+}
 
 .iframe_wrapper {
     position: relative;
     width: 100%;
     padding-top: 56.25%;
     background-color: grey;
-};
+}
 
 iframe {
     position: absolute;
@@ -21,25 +21,25 @@ iframe {
     height: 100%;
     z-index: 999;
     border: 0;
-};
+}
 
 .play_button {
     width: 3vw;
     height: auto;
-};
+}
 
 .play_button:hover {
     width: 3.5vw;
     cursor: pointer;
-};
+}
 
 .wrapper {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-};
+}
 
 .container {
     position: absolute;
-};
+}

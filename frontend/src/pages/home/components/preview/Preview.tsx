@@ -11,7 +11,7 @@ export const Preview: React.FC<IPreviewProps> = (props) => {
                 <div className={s.title}>
                     <span>Inspired by the ride. Crafted with passion. Tailored to you.</span>
                 </div>
-                <img src={process.env.PUBLIC_URL + '/images/ARCH_Preview.jpg'} alt="ARCH" />
+                <img src={process.env.PUBLIC_URL + '/images/home/ARCH_Preview.jpg'} alt="ARCH" />
                 <div className={s.preview_footer}>
                     <span>MOTORCYCLES</span>
                 </div>

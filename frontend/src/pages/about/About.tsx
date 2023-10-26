@@ -5,6 +5,9 @@ import { ScrollToTop } from '../../UI/scrollToTop/ScrollToTop';
 
 import s from './About.module.scss';
 import { Stories } from './components/stories/Stories';
+import { Production } from './components/production/Production';
+import { Design } from './components/design/Design';
+import { Philosophy } from './components/philosophy/Philosophy';
 
 interface IAboutProps { };
 
@@ -19,7 +22,7 @@ export const About: React.FC<IAboutProps> = (props) => {
                 />
                 <Stories
                     theme='light'
-                    file_name='images/stories/about_stories_top.jpg'
+                    file_name='about_stories_top.jpg'
                     alt='about arch'
                     title='about arch'
                     content='ARCH Motorcycle was founded in 2011 to challenge the perception of what an American motorcycle could be. 
@@ -27,11 +30,11 @@ export const About: React.FC<IAboutProps> = (props) => {
                     ARCH owners seek more than just a machine. They are passionate individuals in search of a completely immersive riding experience. 
                     Every ARCH motorcycle is built from an obsession for innovative design, engineering excellence and dedication to the rider.'
                 />
-
-
+                <Production />
+                <Design />
                 <Stories
                     theme='dark'
-                    file_name='images/stories/about_stories_bottom.jpg'
+                    file_name='about_stories_bottom.jpg'
                     alt='ENGINEERING ART'
                     title='ENGINEERING ART'
                     content='Engineering is the bridge connecting our design and manufacturing philosophies. 
@@ -39,6 +42,7 @@ export const About: React.FC<IAboutProps> = (props) => {
                     We prefer never taking the easy way out and look to find solutions that allow the manufacturing process to respect the design. 
                     We use computerized strength analysis and the most advanced 3-D modeling software to take the part from concept to reality.'
                 />
+                <Philosophy />
                 <VideoComponent
                     video='https://www.youtube.com/embed/DfnP3vWFT6E?si=LQq88fy7tRAalN3w'
                     background='about/ARCH_about_bottom.mp4'
