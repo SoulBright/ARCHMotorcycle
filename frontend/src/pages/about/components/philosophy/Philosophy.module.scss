@@ -49,12 +49,12 @@
   }
 
   .btn_prev {
-    left: 5%;
+    left: 2%;
     z-index: 999;
   }
 
   .btn_next {
-    right: 5%;
+    right: 2%;
   }
 
   .btn_prev:hover, .btn_next:hover {
@@ -76,7 +76,4 @@
     .slider {
         height: 666px;
     }
-  }
-
-  @media screen and (min-width: 981px) {
   }

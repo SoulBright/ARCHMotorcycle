@@ -30,7 +30,7 @@ export const Footer: React.FC<IFooterProps> = (props) => {
       </div>
       <div className={s.footer_info_wrapper}>
         <div className={s.footer_info}>
-          © 2023 pet project disigned by Soul Bright
+          © 2023 pet project disigned by <a href='https://github.com/SoulBright' target="_blank" rel="noopener noreferrer">Soul Bright</a>
         </div>
       </div>
     </footer>

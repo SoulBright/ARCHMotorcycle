@@ -12,9 +12,10 @@ interface IMenuModalProps {
 };
 
 export const MenuModal: React.FC<IMenuModalProps> = ({ isOpen, onClose, children }) => {
+    const nodeRef = React.useRef(null);
     return (
         <>
-            <Transition in={isOpen} timeout={350} unmountOnExit={true}>
+            <Transition in={isOpen} timeout={350} unmountOnExit={true} nodeRef={nodeRef}>
                 {(state) => (
                     <div className={`modal modal--${state}`}>
                         <div className='modal_wrapper'>

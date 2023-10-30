@@ -18,7 +18,7 @@ export const Menu: React.FC<IMenuProps> = (props) => {
       id: 2,
       title: 'About',
       serial_number: 2,
-      url: 'http://localhost:3000/'
+      url: 'http://localhost:3000/about'
     },
     {
       id: 3,
