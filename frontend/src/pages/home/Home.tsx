@@ -1,9 +1,7 @@
 import * as React from 'react';
-import { useEffect } from 'react';
 
 import s from './Home.module.scss';
 
-import { ReactComponent as ToTopIco } from './to-top-icon.svg';
 import { VideoComponent } from '../../UI/videoComponent/VideoComponent';
 import { Preview } from './components/preview/Preview';
 import { ModelRange } from './components/modelRange/ModelRange';

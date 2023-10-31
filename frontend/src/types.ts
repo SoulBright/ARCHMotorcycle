@@ -12,7 +12,7 @@ export type TypeSocialItems = {
     url: string;
 };
 
-export type TypePhilosophyItems = {
+export type TypeComponentSliderItems = {
     id: number;
     title: string;
     content: string;
