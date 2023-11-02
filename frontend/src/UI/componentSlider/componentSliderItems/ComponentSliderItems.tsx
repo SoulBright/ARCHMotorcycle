@@ -21,3 +21,4 @@ export const ComponentSliderItems: React.FC<IComponentSliderItemsProps> = ({ tit
         </div>
     );
 };
+
