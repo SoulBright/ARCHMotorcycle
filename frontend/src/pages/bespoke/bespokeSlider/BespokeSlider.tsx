@@ -69,8 +69,12 @@ export const BespokeSlider: React.FC<IBespokeSliderProps> = ({ title, content, I
                     </div>
                 </div>
                 <nav className={s.nav_dot}>
-                    {ItemsList.map((item) => (
-                        <span key={item.sl_number} className={s.dot} onClick={() => handleSlideSelect(item.sl_number - 1)}></span>
+                    {ItemsList.map((item, index) => (
+                        <span
+                            key={item.sl_number}
+                            className={`${s.dot} ${index === activeSlideIndex ? s.active_dot : ''}`}
+                            onClick={() => handleSlideSelect(index)}
+                        ></span>
                     ))}
                 </nav>
                 <button className={s.prev} onClick={() => handleSlideChange('prev')}>&#10094;</button>

@@ -39,11 +39,15 @@
         height: 13px;
         width: 13px;
         margin: 0 2px 15px;
-        background-color: silver;
+        background-color: $font-light-color;
         border-radius: 50%;
         display: inline-block;
-        transition: background-color 0.6s ease;
+        transition: background-color 0.3s ease;
         opacity: 0;
+    }
+
+    .active_dot {
+        background-color: $font-red-color;
     }
 
     .prev,
