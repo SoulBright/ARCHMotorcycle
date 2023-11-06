@@ -11,11 +11,14 @@ import { TextComponent } from '../../UI/textComponent/TextComponent';
 import { ComponentSlider } from '../../UI/componentSlider/ComponentSlider';
 import { ImgComponent } from '../../UI/imgComponent/ImgComponent';
 import { BespokeSlider } from './bespokeSlider/BespokeSlider';
+import { DetailSlider } from './detailSlider/DetailSlider';
+import * as Item from './variables/DetailSliderList';
 
 interface IBespokeProps {
 }
 
 export const Bespoke: React.FC<IBespokeProps> = (props) => {
+  const [selectItems, setSelectItems] = React.useState(Item.S1_1ItemsList)
 
   return (
     <div>
@@ -35,6 +38,9 @@ export const Bespoke: React.FC<IBespokeProps> = (props) => {
         title='PREVIOUS BUILDS'
         content='Browse through ARCH 1s  &  ARCH KRGT-1 previous build galleries. Select a bike in the top row, then pan through the photos beneath.'
         ItemsList={BespokeSliderItemsList}
+      />
+      <DetailSlider 
+        ItemsList={selectItems}
       />
     </div>
   );

@@ -23,4 +23,11 @@ export type TypeBespokeSliderItems = {
     sl_number: number,
     file_name: string,
     alt: string,
+    selectList: string,
+};
+
+export type TypeDetailSliderItems = {
+    sl_number: number,
+    file_name: string,
+    alt: string,
 };
