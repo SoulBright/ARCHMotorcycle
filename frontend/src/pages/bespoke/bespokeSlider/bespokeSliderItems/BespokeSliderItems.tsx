@@ -7,11 +7,12 @@ interface IBespokeSliderItemsProps {
   sl_lengs: number,
   file_name: string,
   alt: string,
+  onClick?: () => void
 }
 
-export const BespokeSliderItems: React.FC<IBespokeSliderItemsProps> = ({ sl_number, sl_lengs, file_name, alt }) => {
+export const BespokeSliderItems: React.FC<IBespokeSliderItemsProps> = ({ sl_number, sl_lengs, file_name, alt, onClick}) => {
   return (
-      <div className={s.wrapper}>
+      <div className={s.wrapper} onClick={onClick}>
         <div className={s.number}>{sl_number}/{sl_lengs}</div>
         <img src={process.env.PUBLIC_URL + `/images/${file_name}`} alt={alt} />
       </div>

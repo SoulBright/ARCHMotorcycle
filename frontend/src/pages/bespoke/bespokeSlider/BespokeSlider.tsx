@@ -3,20 +3,23 @@ import * as React from 'react';
 import s from './BespokeSlider.module.scss';
 
 import { TypeBespokeSliderItems } from '../../../types';
+import { TypeDetailSliderItems } from '../../../types';
+
 import { BespokeSliderItems } from './bespokeSliderItems/BespokeSliderItems';
 
 interface IBespokeSliderProps {
     title: string;
     content: string;
     ItemsList: TypeBespokeSliderItems[];
+    selectedItem: (item: TypeDetailSliderItems[]) => void
 }
 
-export const BespokeSlider: React.FC<IBespokeSliderProps> = ({ title, content, ItemsList }) => {
+export const BespokeSlider: React.FC<IBespokeSliderProps> = ({ title, content, ItemsList, selectedItem }) => {
     const [additPrevSlideIndex, setAdditPrevSlideIndex] = React.useState(ItemsList.length - 2);
     const [prevSlideIndex, setPrevSlideIndex] = React.useState(ItemsList.length - 1);
     const [activeSlideIndex, setActiveSlideIndex] = React.useState(0);
     const [nextSlideIndex, setNextSlideIndex] = React.useState(1);
-    const [nextadditSlideIndex, setAdditNextSlideIndex] = React.useState(2);
+    const [nextAdditSlideIndex, setAdditNextSlideIndex] = React.useState(2);
     const [slideDirection, setSlideDirection] = React.useState('');
 
     const handleSlideChange = (direction: string) => {
@@ -40,11 +43,15 @@ export const BespokeSlider: React.FC<IBespokeSliderProps> = ({ title, content, I
     };
 
     const handleSlideSelect = (index: number) => {
-        setAdditPrevSlideIndex(index === 0 ? ItemsList.length - 2 : index - 2)
+        setAdditPrevSlideIndex(index === 0 ? ItemsList.length - 2 : index === 1 ? ItemsList.length - 1 : index - 2);
         setPrevSlideIndex(index === 0 ? ItemsList.length - 1 : index - 1)
         setActiveSlideIndex(index)
         setNextSlideIndex((index + 1) % ItemsList.length)
         setAdditNextSlideIndex((index + 2) % ItemsList.length)
+    }
+
+    const handleSlideItemChange = (item: TypeDetailSliderItems[]) => {
+        selectedItem(item)
     }
 
     return (
@@ -61,30 +68,35 @@ export const BespokeSlider: React.FC<IBespokeSliderProps> = ({ title, content, I
                             sl_number={ItemsList[additPrevSlideIndex].sl_number}
                             file_name={ItemsList[additPrevSlideIndex].file_name}
                             alt={ItemsList[additPrevSlideIndex].alt}
+                            onClick={() => handleSlideItemChange(ItemsList[additPrevSlideIndex].selectList)}
                         />
                         <BespokeSliderItems
                             sl_lengs={ItemsList.length}
                             sl_number={ItemsList[prevSlideIndex].sl_number}
                             file_name={ItemsList[prevSlideIndex].file_name}
                             alt={ItemsList[prevSlideIndex].alt}
+                            onClick={() => handleSlideItemChange(ItemsList[prevSlideIndex].selectList)}
                         />
                         <BespokeSliderItems
                             sl_lengs={ItemsList.length}
                             sl_number={ItemsList[activeSlideIndex].sl_number}
                             file_name={ItemsList[activeSlideIndex].file_name}
                             alt={ItemsList[activeSlideIndex].alt}
+                            onClick={() => handleSlideItemChange(ItemsList[activeSlideIndex].selectList)}
                         />
                         <BespokeSliderItems
                             sl_lengs={ItemsList.length}
                             sl_number={ItemsList[nextSlideIndex].sl_number}
                             file_name={ItemsList[nextSlideIndex].file_name}
                             alt={ItemsList[nextSlideIndex].alt}
+                            onClick={() => handleSlideItemChange(ItemsList[nextSlideIndex].selectList)}
                         />
                         <BespokeSliderItems
                             sl_lengs={ItemsList.length}
-                            sl_number={ItemsList[nextadditSlideIndex].sl_number}
-                            file_name={ItemsList[nextadditSlideIndex].file_name}
-                            alt={ItemsList[nextadditSlideIndex].alt}
+                            sl_number={ItemsList[nextAdditSlideIndex].sl_number}
+                            file_name={ItemsList[nextAdditSlideIndex].file_name}
+                            alt={ItemsList[nextAdditSlideIndex].alt}
+                            onClick={() => handleSlideItemChange(ItemsList[nextAdditSlideIndex].selectList)}
                         />
                     </div>
                 </div>

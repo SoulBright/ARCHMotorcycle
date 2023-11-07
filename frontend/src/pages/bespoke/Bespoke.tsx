@@ -2,6 +2,8 @@ import * as React from 'react';
 
 import s from './Bespoke.module.scss';
 
+import { TypeDetailSliderItems } from '../../types';
+
 import { BespokeSliderItemsList } from './variables/BespokeSliderItemsList';
 import { BespokeItemsList } from './variables/BespokeItemsList';
 
@@ -12,13 +14,17 @@ import { ComponentSlider } from '../../UI/componentSlider/ComponentSlider';
 import { ImgComponent } from '../../UI/imgComponent/ImgComponent';
 import { BespokeSlider } from './bespokeSlider/BespokeSlider';
 import { DetailSlider } from './detailSlider/DetailSlider';
-import * as Item from './variables/DetailSliderList';
+import { S1_1ItemsList } from './variables/DetailSliderList';
 
 interface IBespokeProps {
 }
 
 export const Bespoke: React.FC<IBespokeProps> = (props) => {
-  const [selectItems, setSelectItems] = React.useState(Item.S1_1ItemsList)
+  const [selectItems, setSelectItems] = React.useState(S1_1ItemsList)
+
+  const handleSlideChange = (item: TypeDetailSliderItems[]) => {
+    setSelectItems(item)
+  }
 
   return (
     <div>
@@ -38,6 +44,7 @@ export const Bespoke: React.FC<IBespokeProps> = (props) => {
         title='PREVIOUS BUILDS'
         content='Browse through ARCH 1s  &  ARCH KRGT-1 previous build galleries. Select a bike in the top row, then pan through the photos beneath.'
         ItemsList={BespokeSliderItemsList}
+        selectedItem={handleSlideChange}
       />
       <DetailSlider 
         ItemsList={selectItems}
