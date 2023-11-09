@@ -1,0 +1,50 @@
+@import '../../../../styles/variables.scss';
+
+.wrapper {
+    width: 270px;
+    height: 270px;
+    position: relative;
+    overflow: hidden;
+}
+
+.wrapper:hover {
+    .container {
+        display: block;
+    }
+
+    .content {
+        img {
+            filter: brightness(50%);
+        }
+    }
+}
+
+.container {
+    width: 270px;
+    height: 270px;
+    position: relative;
+    cursor: pointer;
+    display: none;
+
+    .zoom_btn {
+        fill: $font-light-color;
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.content {
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        width: auto;
+        object-fit: cover;
+    }
+}

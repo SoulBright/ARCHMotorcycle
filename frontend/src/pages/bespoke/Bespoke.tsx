@@ -33,7 +33,10 @@ export const Bespoke: React.FC<IBespokeProps> = (props) => {
         <VideoComponent
           video='https://www.youtube.com/embed/9fq0nxyRRqM?si=LKMeVEXuFElTGHFT'
           background='bespoke/bespoke.mp4' />
-        <TextComponent theme='light' content='“Our goal has always been to create a riding and ownership experience unlike any other.”' />
+        <TextComponent
+          theme='light'
+          content='“Our goal has always been to create a riding and ownership experience unlike any other.”'
+        />
         <ComponentSlider
           main_title='BESPOKE PROCESS'
           ItemsList={BespokeItemsList}
@@ -46,7 +49,7 @@ export const Bespoke: React.FC<IBespokeProps> = (props) => {
         ItemsList={BespokeSliderItemsList}
         selectedItem={handleSlideChange}
       />
-      <DetailSlider 
+      <DetailSlider
         ItemsList={selectItems}
       />
     </div>

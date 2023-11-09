@@ -30,7 +30,7 @@ export const Menu: React.FC<IMenuProps> = (props) => {
       id: 4,
       title: 'Ownership',
       serial_number: 4,
-      url: 'http://localhost:3000/'
+      url: 'http://localhost:3000/ownership'
     },
     {
       id: 5,

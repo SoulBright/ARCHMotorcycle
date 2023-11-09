@@ -31,3 +31,8 @@ export type TypeDetailSliderItems = {
     file_name: string,
     alt: string,
 };
+
+export type TypeSocialImgItems = {
+    file_name: string,
+    alt: string,
+};

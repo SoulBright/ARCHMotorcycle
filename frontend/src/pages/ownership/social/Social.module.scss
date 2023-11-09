@@ -1,0 +1,16 @@
+@import '../../../styles/variables.scss';
+
+.content {
+    h3 {
+        padding-bottom: 10px;
+        font-size: clamp(20px, 5vw, 32px);
+        font-weight: 900 !important;
+        font-family: 'Eurostile-extended';
+        line-height: 25px;
+        color: $font-dark-color;
+    }
+
+    p {
+        color: $font-dark-color;
+    }
+}

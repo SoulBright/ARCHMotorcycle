@@ -11,6 +11,7 @@ interface IBenefitsProps {
     alt: string,
     title: string,
     content: string,
+    link: string
 };
 
 export const Benefits: React.FC<IBenefitsProps> = (props) => {
@@ -41,7 +42,9 @@ export const Benefits: React.FC<IBenefitsProps> = (props) => {
                     <h3>{props.title}</h3>
                     <span>{props.content}</span>
                     <div className={s.btn_w}>
-                        <MyButton theme={props.theme}>DISCOVER MORE</MyButton>
+                        <MyButton theme={props.theme}>
+                            <a href={props.link}>DISCOVER MORE</a>
+                        </MyButton>
                     </div>
                 </div>
             </div>

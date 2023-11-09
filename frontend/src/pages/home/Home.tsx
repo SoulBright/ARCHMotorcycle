@@ -6,11 +6,11 @@ import { VideoComponent } from '../../UI/videoComponent/VideoComponent';
 import { Preview } from './components/preview/Preview';
 import { ModelRange } from './components/modelRange/ModelRange';
 import { Benefits } from './components/benefits/Benefits';
-import { MadeIn } from './components/madeIn/MadeIn';
+import { PhotoAndTextLeft } from '../../UI/photoAndText/PhotoAndTextLeft';
 import { Apparel } from './components/apparel/Apparel';
 import { ScrollToTop } from '../../UI/scrollToTop/ScrollToTop';
 
-interface IHomeProps {};
+interface IHomeProps { };
 
 export const Home: React.FC<IHomeProps> = (props) => {
   return (
@@ -26,6 +26,7 @@ export const Home: React.FC<IHomeProps> = (props) => {
         file_name_m='bespoke_mobile_img.jpg'
         file_name_l='bespoke_img.jpg'
         alt='Bespoke'
+        link='http://localhost:3000/bespoke'
         title='Bespoke'
         content='There is a unique feeling walking up to your machine, 
         one that you co-designed and have entrusted us to curate. 
@@ -40,11 +41,20 @@ export const Home: React.FC<IHomeProps> = (props) => {
         file_name_m='about_arch_mobile.jpg'
         file_name_l='about_arch.jpg'
         alt='About_arch'
+        link='http://localhost:3000/about'
         title='About arch'
         content='At ARCH Motorcycle we employ creativity and innovation to challenge conventional motorcycle design. 
         We are driven by passion and a relentless commitment to develop the next chapter in the story of American motorcycling.'
       />
-      <MadeIn />
+      <PhotoAndTextLeft
+        theme='light'
+        title='Made in California'
+        content='ARCH Motorcycle planted roots in California long before the company was founded.
+        The temperate climate is ideal for year-round riding and its diverse topography welcomes a sense of adventure,
+        making it the perfect place for development.'
+        file_name='home/Californian-dreaming.jpg'
+        alt='Californian-dreaming'
+      />
       <Apparel />
     </div>
   );

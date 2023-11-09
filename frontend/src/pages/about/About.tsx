@@ -5,7 +5,7 @@ import { TypeComponentSliderItems } from '../../types';
 
 import { VideoComponent } from '../../UI/videoComponent/VideoComponent';
 import { ScrollToTop } from '../../UI/scrollToTop/ScrollToTop';
-import { Stories } from './components/stories/Stories';
+import { PhotoAndTextRight } from '../../UI/photoAndText/PhotoAndTextRight';
 import { Production } from './components/production/Production';
 import { Design } from './components/design/Design';
 import { ComponentSlider } from '../../UI/componentSlider/ComponentSlider'
@@ -47,9 +47,9 @@ export const About: React.FC<IAboutProps> = (props) => {
                     video='https://www.youtube.com/embed/g33LEbg63SU?si=Ndv6zzVmpT2wy1Wu'
                     background='about/ARCH_about_top.mp4'
                 />
-                <Stories
-                    theme='light'
-                    file_name='about_stories_top.jpg'
+                <PhotoAndTextRight
+                    theme='dark'
+                    file_name='about/stories/about_stories_top.jpg'
                     alt='about arch'
                     title='about arch'
                     content='ARCH Motorcycle was founded in 2011 to challenge the perception of what an American motorcycle could be. 
@@ -59,9 +59,9 @@ export const About: React.FC<IAboutProps> = (props) => {
                 />
                 <Production />
                 <Design />
-                <Stories
-                    theme='dark'
-                    file_name='about_stories_bottom.jpg'
+                <PhotoAndTextRight
+                    theme='light'
+                    file_name='about/stories/about_stories_bottom.jpg'
                     alt='ENGINEERING ART'
                     title='ENGINEERING ART'
                     content='Engineering is the bridge connecting our design and manufacturing philosophies. 
