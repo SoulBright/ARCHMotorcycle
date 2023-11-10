@@ -51,15 +51,15 @@ export const Ownership: React.FC<IOwnershipProps> = (props) => {
         These events provide the opportunity to meet with other ARCH owners while exploring unique and adventurous roads, 
         enjoying fabulous meals, and celebrating the camaraderie of a shared passion for riding.'
         />
-        <VideoComponent
-          video='https://www.youtube.com/embed/IfFsOqNha78?si=vuI_D4eZGE3MS0fX'
-          background='ownership/OWNERS_EVENT.mp4'
-        />
         <Social
           title='ARCH SOCIAL'
           content='Our owner-only social media platform enhances the ARCH community. 
        Owners frequently connect here to chat about experiences, local rides, upcoming events and more.'
           itemList={OwnPhotoItemsList}
+        />
+        <VideoComponent
+          video='https://www.youtube.com/embed/IfFsOqNha78?si=vuI_D4eZGE3MS0fX'
+          background='ownership/OWNERS_EVENT.mp4'
         />
       </div>
     </div>

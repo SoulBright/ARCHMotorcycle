@@ -20,12 +20,14 @@ export const Social: React.FC<ISocialProps> = ({ title, content, itemList }) => 
       </div>
       <div className={s.container}>
         {itemList.map((item) => (
-          <SocialImgItems
-            file_name={item.file_name}
-            alt={item.alt}
-          />
+          <div key={item.file_name}>
+            <SocialImgItems
+              file_name={item.file_name}
+              alt={item.alt}
+            />
+          </div>
         ))}
       </div>
     </div>
   );
-};
+}; 

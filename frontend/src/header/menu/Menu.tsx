@@ -36,7 +36,7 @@ export const Menu: React.FC<IMenuProps> = (props) => {
       id: 5,
       title: 'krgt-1',
       serial_number: 5,
-      url: 'http://localhost:3000/'
+      url: 'http://localhost:3000/arch-krgt-1/'
     },
     {
       id: 6,

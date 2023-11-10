@@ -5,11 +5,11 @@
     position: relative;
 
     h3 {
-        color: $font-light-color;
+        color: $font-dark-color;
     }
 
     span {
-        color: $font-light-color;
+        color: $font-dark-color;
     }
 }
 
@@ -79,6 +79,19 @@
 }
 
 @media screen and (min-width: 980px) {
+    .darkTheme {
+        background-color: $background-color;
+        position: relative;
+    
+        h3 {
+            color: $font-light-color;
+        }
+    
+        span {
+            color: $font-light-color;
+        }
+    }
+
     .container {
         h3 {
             font-size: 30px;
