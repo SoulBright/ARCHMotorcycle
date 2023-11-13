@@ -41,3 +41,8 @@ export type TypePreviewSliderItems = {
     file_name: string,
     alt: string,
 };
+
+export type TypeFeaturesItems = {
+    file_name: string,
+    alt: string,
+};

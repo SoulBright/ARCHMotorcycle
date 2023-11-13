@@ -21,12 +21,15 @@
 .wrapper {
     padding: 50px 10px;
     position: relative;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .container {
     margin: 0 7%;
     padding-top: 10%;
+    text-align: center;
 
     span {
         font-family: Georgia, 'Times New Roman', Times, serif;
@@ -36,12 +39,11 @@
     }
 }
 
-@media screen and (min-width: 768px) {
-}
-
 @media screen and (min-width: 980px) {
     .container {
+        max-width: 1360px;
         padding: 2% 0;
+        margin: 0;
         
         span {
             padding: 1% 0;
