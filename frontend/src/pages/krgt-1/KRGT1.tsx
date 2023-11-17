@@ -4,6 +4,7 @@ import s from './KRGT1.module.scss';
 import { PreviewSliderList } from './variables/PreviewSliderList';
 import { FeatureHighlightsList } from './variables/FeatureHighlightsList';
 import { FeaturesImgList } from './variables/FeaturesImgList';
+import { specificationList } from './variables/SpecificationList';
 
 import { VideoComponent } from '../../UI/videoComponent/VideoComponent';
 import { ModelDetailComponent } from '../../UI/modelDetailComponent/ModelDetailComponent';
@@ -13,6 +14,7 @@ import { ComponentSlider } from '../../UI/componentSlider/ComponentSlider';
 import { TextComponent } from '../../UI/textComponent/TextComponent';
 import { AboutModel } from '../../UI/aboutModel/AboutModel';
 import { Features } from '../../UI/featuresComponent/Features';
+import { Specifications } from '../../UI/specifications/Specifications';
 
 interface IKRGT1Props {
 }
@@ -70,6 +72,13 @@ export const KRGT1: React.FC<IKRGT1Props> = (props) => {
                 A uniquely shaped seat and ideal placement of foot and hand controls result in an organic connection with the motorcycle. 
                 Assembled at ARCH Motorcycle’s Los Angeles facility, each ARCH KRGT-1 is built to order.'
                 itemList={FeaturesImgList}
+            />
+            <Specifications
+                theme='light'
+                file_name='krgt-1/Specification.jpg'
+                alt='KRGT-1-engine'
+                title='KEY SPECIFICATIONS'
+                itemList={specificationList}
             />
         </div>
     );

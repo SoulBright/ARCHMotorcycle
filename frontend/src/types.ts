@@ -46,3 +46,8 @@ export type TypeFeaturesItems = {
     file_name: string,
     alt: string,
 };
+
+export type TypeSpecificationItems = {
+    value: string,
+    descriptyon: string,
+}
