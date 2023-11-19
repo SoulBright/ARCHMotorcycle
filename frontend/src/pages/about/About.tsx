@@ -8,7 +8,7 @@ import { ScrollToTop } from '../../components/scrollToTop/ScrollToTop';
 import { PhotoAndTextRight } from '../../components/photoAndText/PhotoAndTextRight';
 import { Production } from './components/production/Production';
 import { Design } from './components/design/Design';
-import { ComponentSlider } from '../../UI/componentSlider/ComponentSlider'
+import { ComponentSlider } from '../../components/componentSlider/ComponentSlider'
 
 interface IAboutProps { };
 

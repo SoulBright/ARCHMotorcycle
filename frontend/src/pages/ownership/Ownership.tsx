@@ -8,7 +8,7 @@ import { OwnPhotoItemsList } from './variables/OwnPhotoItems';
 import { ScrollToTop } from '../../components/scrollToTop/ScrollToTop';
 import { VideoComponent } from '../../components/videoComponent/VideoComponent';
 import { PhotoAndTextLeft } from '../../components/photoAndText/PhotoAndTextLeft';
-import { ComponentSlider } from '../../UI/componentSlider/ComponentSlider';
+import { ComponentSlider } from '../../components/componentSlider/ComponentSlider';
 import { TextComponent } from '../../components/textComponent/TextComponent';
 import { PhotoAndTextRight } from '../../components/photoAndText/PhotoAndTextRight';
 import { Social } from './social/Social';

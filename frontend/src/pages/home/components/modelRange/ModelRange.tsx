@@ -11,7 +11,7 @@ export const ModelRange: React.FC<IModelRangeProps> = (props) => {
       <div className={s.model_wrapper}>
         <div className={s.model_container}>
           <ModelRangeItems link='http://localhost:3000/arch-krgt-1/' file_name='KRGT-1.jpg' alt='krgt-1' />
-          <ModelRangeItems link='' file_name='1S.jpg' alt='1s' />
+          <ModelRangeItems link='http://localhost:3000/arch-1s/' file_name='1S.jpg' alt='1s' />
           <ModelRangeItems link='' file_name='method_143.jpg' alt='method 143' />
         </div>
       </div>

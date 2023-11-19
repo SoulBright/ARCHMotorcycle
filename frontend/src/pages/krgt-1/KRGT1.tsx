@@ -8,13 +8,13 @@ import { specificationList } from './variables/SpecificationList';
 
 import { VideoComponent } from '../../components/videoComponent/VideoComponent';
 import { ModelDetailComponent } from '../../components/modelDetailComponent/ModelDetailComponent';
-import { PreviewSlider } from '../../UI/previewSlider/PreviewSlider';
+import { PreviewSlider } from '../../components/previewSlider/PreviewSlider';
 import { ScrollToTop } from '../../components/scrollToTop/ScrollToTop';
-import { ComponentSlider } from '../../UI/componentSlider/ComponentSlider';
+import { ComponentSlider } from '../../components/componentSlider/ComponentSlider';
 import { TextComponent } from '../../components/textComponent/TextComponent';
 import { AboutModel } from '../../components/aboutModel/AboutModel';
-import { Features } from '../../UI/featuresComponent/Features';
-import { Specifications } from '../../UI/specifications/Specifications';
+import { Features } from '../../components/featuresComponent/Features';
+import { Specifications } from '../../components/specifications/Specifications';
 import { Details } from '../../components/details/Details';
 import { DetailsList } from './variables/DetailsList';
 

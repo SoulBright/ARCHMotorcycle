@@ -11,6 +11,7 @@ import { About } from './pages/about/About';
 import { Bespoke } from './pages/bespoke/Bespoke';
 import { Ownership } from './pages/ownership/Ownership';
 import { KRGT1 } from './pages/krgt-1/KRGT1';
+import { OneS } from './pages/1s/1s';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path='bespoke/' element={<Bespoke />} />
         <Route path='ownership/' element={<Ownership />} />
         <Route path='arch-krgt-1/' element={<KRGT1 />} />
+        <Route path='arch-1s/' element={<OneS />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer />

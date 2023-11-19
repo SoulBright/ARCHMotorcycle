@@ -1,0 +1,39 @@
+@import '../../../styles/variables.scss';
+
+.lightTheme {
+    background-color: $background-color-light;
+    position: relative;
+
+    .value {
+        color: $font-dark-color;
+    }
+
+    span {
+        color: $font-dark-color;
+        font-weight: 400;
+    }
+}
+
+.darkTheme {
+    background-color: $background-color;
+    position: relative;
+
+    .value {
+        color: $font-light-color;
+    }
+
+    span {
+        color: $font-light-color;
+        font-weight: 400;
+    }
+}
+
+.value {
+    padding: 6px 20px 6px 24px;
+    font-family: 'Eurostile-extended';
+    font-size: clamp(34px, 5vw, 74px);
+}
+
+.descriptyon {
+    padding: 6px 24px;
+}

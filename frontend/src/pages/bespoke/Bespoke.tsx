@@ -10,7 +10,7 @@ import { BespokeItemsList } from './variables/BespokeItemsList';
 import { ScrollToTop } from '../../components/scrollToTop/ScrollToTop';
 import { VideoComponent } from '../../components/videoComponent/VideoComponent';
 import { TextComponent } from '../../components/textComponent/TextComponent';
-import { ComponentSlider } from '../../UI/componentSlider/ComponentSlider';
+import { ComponentSlider } from '../../components/componentSlider/ComponentSlider';
 import { ImgComponent } from '../../components/imgComponent/ImgComponent';
 import { BespokeSlider } from './bespokeSlider/BespokeSlider';
 import { DetailSlider } from './detailSlider/DetailSlider';
