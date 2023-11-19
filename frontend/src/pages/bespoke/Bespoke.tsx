@@ -7,11 +7,11 @@ import { TypeDetailSliderItems } from '../../types';
 import { BespokeSliderItemsList } from './variables/BespokeSliderItemsList';
 import { BespokeItemsList } from './variables/BespokeItemsList';
 
-import { ScrollToTop } from '../../UI/scrollToTop/ScrollToTop';
-import { VideoComponent } from '../../UI/videoComponent/VideoComponent';
-import { TextComponent } from '../../UI/textComponent/TextComponent';
+import { ScrollToTop } from '../../components/scrollToTop/ScrollToTop';
+import { VideoComponent } from '../../components/videoComponent/VideoComponent';
+import { TextComponent } from '../../components/textComponent/TextComponent';
 import { ComponentSlider } from '../../UI/componentSlider/ComponentSlider';
-import { ImgComponent } from '../../UI/imgComponent/ImgComponent';
+import { ImgComponent } from '../../components/imgComponent/ImgComponent';
 import { BespokeSlider } from './bespokeSlider/BespokeSlider';
 import { DetailSlider } from './detailSlider/DetailSlider';
 import { S1_1ItemsList } from './variables/DetailSliderList';

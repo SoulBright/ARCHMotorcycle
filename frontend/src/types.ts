@@ -51,3 +51,8 @@ export type TypeSpecificationItems = {
     value: string,
     descriptyon: string,
 }
+
+export type TypeDetailItems = {
+    parameter: string,
+    description: string,
+};

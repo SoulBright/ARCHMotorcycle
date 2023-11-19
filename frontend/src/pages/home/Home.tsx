@@ -2,13 +2,13 @@ import * as React from 'react';
 
 import s from './Home.module.scss';
 
-import { VideoComponent } from '../../UI/videoComponent/VideoComponent';
+import { VideoComponent } from '../../components/videoComponent/VideoComponent';
 import { Preview } from './components/preview/Preview';
 import { ModelRange } from './components/modelRange/ModelRange';
 import { Benefits } from './components/benefits/Benefits';
-import { PhotoAndTextLeft } from '../../UI/photoAndText/PhotoAndTextLeft';
+import { PhotoAndTextLeft } from '../../components/photoAndText/PhotoAndTextLeft';
 import { Apparel } from './components/apparel/Apparel';
-import { ScrollToTop } from '../../UI/scrollToTop/ScrollToTop';
+import { ScrollToTop } from '../../components/scrollToTop/ScrollToTop';
 
 interface IHomeProps { };
 

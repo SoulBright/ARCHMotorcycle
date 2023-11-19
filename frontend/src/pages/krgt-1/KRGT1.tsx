@@ -6,15 +6,17 @@ import { FeatureHighlightsList } from './variables/FeatureHighlightsList';
 import { FeaturesImgList } from './variables/FeaturesImgList';
 import { specificationList } from './variables/SpecificationList';
 
-import { VideoComponent } from '../../UI/videoComponent/VideoComponent';
-import { ModelDetailComponent } from '../../UI/modelDetailComponent/ModelDetailComponent';
+import { VideoComponent } from '../../components/videoComponent/VideoComponent';
+import { ModelDetailComponent } from '../../components/modelDetailComponent/ModelDetailComponent';
 import { PreviewSlider } from '../../UI/previewSlider/PreviewSlider';
-import { ScrollToTop } from '../../UI/scrollToTop/ScrollToTop';
+import { ScrollToTop } from '../../components/scrollToTop/ScrollToTop';
 import { ComponentSlider } from '../../UI/componentSlider/ComponentSlider';
-import { TextComponent } from '../../UI/textComponent/TextComponent';
-import { AboutModel } from '../../UI/aboutModel/AboutModel';
+import { TextComponent } from '../../components/textComponent/TextComponent';
+import { AboutModel } from '../../components/aboutModel/AboutModel';
 import { Features } from '../../UI/featuresComponent/Features';
 import { Specifications } from '../../UI/specifications/Specifications';
+import { Details } from '../../components/details/Details';
+import { DetailsList } from './variables/DetailsList';
 
 interface IKRGT1Props {
 }
@@ -79,6 +81,10 @@ export const KRGT1: React.FC<IKRGT1Props> = (props) => {
                 alt='KRGT-1-engine'
                 title='KEY SPECIFICATIONS'
                 itemList={specificationList}
+            />
+            <Details
+                itemList={DetailsList}
+                certification='CARB / EPA compliant; Euro IV Vehicle Type Approval; ABS standard equipment on 2020-later KRGT-1'
             />
         </div>
     );

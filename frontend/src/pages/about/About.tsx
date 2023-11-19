@@ -3,9 +3,9 @@ import * as React from 'react';
 import s from './About.module.scss';
 import { TypeComponentSliderItems } from '../../types';
 
-import { VideoComponent } from '../../UI/videoComponent/VideoComponent';
-import { ScrollToTop } from '../../UI/scrollToTop/ScrollToTop';
-import { PhotoAndTextRight } from '../../UI/photoAndText/PhotoAndTextRight';
+import { VideoComponent } from '../../components/videoComponent/VideoComponent';
+import { ScrollToTop } from '../../components/scrollToTop/ScrollToTop';
+import { PhotoAndTextRight } from '../../components/photoAndText/PhotoAndTextRight';
 import { Production } from './components/production/Production';
 import { Design } from './components/design/Design';
 import { ComponentSlider } from '../../UI/componentSlider/ComponentSlider'

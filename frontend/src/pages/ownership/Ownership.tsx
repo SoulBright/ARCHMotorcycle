@@ -5,12 +5,12 @@ import s from './Ownership.module.scss';
 import { PurxhaseItemsList } from './variables/PurxhaseItems';
 import { OwnPhotoItemsList } from './variables/OwnPhotoItems';
 
-import { ScrollToTop } from '../../UI/scrollToTop/ScrollToTop';
-import { VideoComponent } from '../../UI/videoComponent/VideoComponent';
-import { PhotoAndTextLeft } from '../../UI/photoAndText/PhotoAndTextLeft';
+import { ScrollToTop } from '../../components/scrollToTop/ScrollToTop';
+import { VideoComponent } from '../../components/videoComponent/VideoComponent';
+import { PhotoAndTextLeft } from '../../components/photoAndText/PhotoAndTextLeft';
 import { ComponentSlider } from '../../UI/componentSlider/ComponentSlider';
-import { TextComponent } from '../../UI/textComponent/TextComponent';
-import { PhotoAndTextRight } from '../../UI/photoAndText/PhotoAndTextRight';
+import { TextComponent } from '../../components/textComponent/TextComponent';
+import { PhotoAndTextRight } from '../../components/photoAndText/PhotoAndTextRight';
 import { Social } from './social/Social';
 
 interface IOwnershipProps {
