@@ -3,7 +3,7 @@ import * as React from 'react';
 import s from './1s.module.scss';
 import { ScrollToTop } from '../../components/scrollToTop/ScrollToTop';
 import { VideoComponent } from '../../components/videoComponent/VideoComponent';
-import { ModelDetailComponent } from '../../components/modelDetailComponent/ModelDetailComponent';
+import { OneSDetailComponent } from './OneSDetailComponent/OneSDetailComponent';
 import { PreviewSlider } from '../../components/previewSlider/PreviewSlider';
 import { PreviewSliderList } from './variables/PreviewSliderList';
 import { ComponentSlider } from '../../components/componentSlider/ComponentSlider';
@@ -28,7 +28,7 @@ export const OneS: React.FC<IOneSProps> = (props) => {
                 video='https://www.youtube.com/embed/Rv1hyVTLdpE?si=SwodOT8Jk1ApHFQy'
                 background='1s/ARCH-1S.mp4'
             />
-            <ModelDetailComponent
+            <OneSDetailComponent
                 theme='dark'
                 logo='1s/1s_logo.png'
                 logo_alt='1S Logo'
@@ -52,6 +52,7 @@ export const OneS: React.FC<IOneSProps> = (props) => {
                 content='“Redefining the American Sport Cruiser.”'
             />
             <AboutModel
+                theme='light'
                 title='SPORT FORWARD'
                 p1='The sport-influenced 1s provides a more aggressive riding position allowing for smoother transitions 
             and harder cornering. Utilizing proprietary CNC-machined aluminum components and extensive use of carbon fiber throughout,
@@ -60,6 +61,7 @@ export const OneS: React.FC<IOneSProps> = (props) => {
                 alt='About 1S SPORT FORWARD'
             />
             <Features
+            theme='light'
                 title='TAILORED TO YOU'
                 content='The ARCH 1s features a bespoke aesthetic and ergonomic package tailoring the fit and finish of the motorcycle
                  to its owner. Tailoring begins with the creation of your aesthetic package followed by an ergonomic fitting.

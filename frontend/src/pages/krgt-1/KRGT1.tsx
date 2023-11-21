@@ -52,6 +52,7 @@ export const KRGT1: React.FC<IKRGT1Props> = (props) => {
                 content='“Race-inspired handling and ride quality are paramount, that’s why we work directly with Öhlins.”'
             />
             <AboutModel
+                theme='light'
                 title='PERFORMANCE CRUISER'
                 p1='ARCH Motorcycle was created to redefine what an American motorcycle could be. 
             We saw an opportunity to evolve how a cruiser performed while retaining the visceral characteristics of a V-twin engine. 
@@ -68,6 +69,7 @@ export const KRGT1: React.FC<IKRGT1Props> = (props) => {
                 alt='About KRGT-1 PERFORMANCE CRUISER'
             />
             <Features
+                theme='light'
                 title='TAILORED TO YOU'
                 content='Each KRGT-1 features a bespoke aesthetic and ergonomic package tailoring the fit and finish of the motorcycle to its owner. 
                 Tailoring begins with the creation of your aesthetic package followed by an ergonomic fitting. 

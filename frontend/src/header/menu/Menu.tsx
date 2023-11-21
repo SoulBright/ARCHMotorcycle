@@ -48,13 +48,13 @@ export const Menu: React.FC<IMenuProps> = (props) => {
       id: 7,
       title: 'method 143',
       serial_number: 7,
-      url: 'http://localhost:3000/'
+      url: 'http://localhost:3000/arch-method143/'
     },
     {
       id: 8,
       title: 'apparel',
       serial_number: 8,
-      url: 'http://localhost:3000/'
+      url: 'https://apparel.archmotorcycle.com/'
     },
     {
       id: 9,
@@ -66,7 +66,7 @@ export const Menu: React.FC<IMenuProps> = (props) => {
       id: 10,
       title: 'contact',
       serial_number: 10,
-      url: 'http://localhost:3000/'
+      url: 'https://archmotorcycle.com/contact/'
     },
   ];
   return (

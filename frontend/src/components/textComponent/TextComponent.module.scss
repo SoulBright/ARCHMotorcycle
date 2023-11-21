@@ -2,7 +2,6 @@
 
 .darkTheme {
     background-color: $background-color;
-    position: relative;
 
     span {
         color: $font-light-color;
@@ -11,7 +10,6 @@
 
 .lightTheme {
     background-color: $background-color-light;
-    position: relative;
 
     span {
         color: $font-dark-color;

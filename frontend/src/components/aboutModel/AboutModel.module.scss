@@ -1,5 +1,23 @@
 @import '../../styles/variables.scss';
 
+.darkTheme {
+    background-color: $background-color;
+
+    h3,
+    p {
+        color: $font-light-color;
+    }
+}
+
+.lightTheme {
+    background-color: $background-color-light;
+
+    h3,
+    p {
+        color: $font-dark-color;
+    }
+}
+
 .wrapper {
     position: relative;
     display: flex;
@@ -12,7 +30,7 @@
     width: 100%;
     padding: 2% 0;
     color: $font-dark-color;
-    background-color: $background-color-light;
+    // background-color: $background-color-light;
 }
 
 .img_container {
