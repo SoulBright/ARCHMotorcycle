@@ -58,9 +58,9 @@ export const Menu: React.FC<IMenuProps> = (props) => {
     },
     {
       id: 9,
-      title: 'mews',
+      title: 'news',
       serial_number: 9,
-      url: 'http://localhost:3000/'
+      url: 'http://localhost:3000/news'
     },
     {
       id: 10,

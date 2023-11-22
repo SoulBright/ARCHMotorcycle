@@ -10,7 +10,7 @@ interface IVideoComponentProps {
     background: string,
 };
 
-export const VideoComponent: React.FC<IVideoComponentProps> = ({video, background}) => {
+export const VideoComponent: React.FC<IVideoComponentProps> = ({ video, background }) => {
     const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
     const handlePlayButtonClick = () => {
@@ -24,7 +24,8 @@ export const VideoComponent: React.FC<IVideoComponentProps> = ({video, backgroun
                     <iframe
                         src={`${video}&autoplay=1&rel=0&loop=1`}
                         title="YouTube video player"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share, fs, rel">
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                         gyroscope; picture-in-picture; web-share, fs, rel">
                     </iframe>
                 </div>
             ) : (

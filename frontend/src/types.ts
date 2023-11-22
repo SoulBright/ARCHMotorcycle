@@ -56,3 +56,11 @@ export type TypeDetailItems = {
     parameter: string,
     description: string,
 };
+
+export type TypeNewsItem = {
+    file_name: string
+    alt: string,
+    title: string
+    link: string,
+    content: string,
+}
