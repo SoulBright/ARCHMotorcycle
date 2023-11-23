@@ -25,7 +25,9 @@ export const VideoComponent: React.FC<IVideoComponentProps> = ({ video, backgrou
                         src={`${video}&autoplay=1&rel=0&loop=1`}
                         title="YouTube video player"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                         gyroscope; picture-in-picture; web-share, fs, rel">
+                         gyroscope; picture-in-picture; web-share, fs, rel"
+                        allowFullScreen
+                    >
                     </iframe>
                 </div>
             ) : (

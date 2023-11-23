@@ -12,13 +12,13 @@ export const Footer: React.FC<IFooterProps> = (props) => {
       <div className={s.footer_wrapper}>
         <div className={s.footer}>
           <FooterItems title='contact'>
-            <a href="/contact">Make an inquiry</a>
+            <a href="https://archmotorcycle.com/contact/">Make an inquiry</a>
           </FooterItems>
           <FooterItems title='social'>
             <SocialItems />
           </FooterItems>
           <FooterItems title='legal'>
-            <a href="/privacy-policy/">Privacy | Cookies</a>
+            <a href="https://archmotorcycle.com/privacy-policy/">Privacy | Cookies</a>
           </FooterItems>
           <FooterItems title='apparel'>
             <a href="https://apparel.archmotorcycle.com/">ARCH Apparel</a>

@@ -14,6 +14,7 @@ export const NewsList: React.FC<INewsListProps> = ({ itemList }) => {
     <div className={s.wrapper}>
       <div className={s.title}>
         <h1>LATEST NEWS STORIES & ARTICLES</h1>
+        <p>WARNING! By opening the article or clicking on the "READ THIS" link, you will be redirected to the official website of ARCH Motorcycle company!!!</p>
       </div>
       <div className={s.container}>
         {itemList.map((item) => (
