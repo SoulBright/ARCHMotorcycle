@@ -1,1 +1,37 @@
-@import  '../../../styles/variables.scss';
+@import '../../../styles/variables.scss';
+
+.wrapper {
+    margin: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+        font-size: 32px;
+        font-family: 'Eurostile-extended';
+        margin: 30px 0;
+    }
+}
+
+.title {
+    text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .item {
+        padding-right: 30px;
+    }
+}
+
+@media screen and (min-width: 1110px) {
+    .container {
+        max-width: 1360px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

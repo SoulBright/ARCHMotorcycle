@@ -11,16 +11,23 @@ interface INewsListProps {
 
 export const NewsList: React.FC<INewsListProps> = ({ itemList }) => {
   return (
-    <div className={s.wrapper} >
-      {itemList.map((item) => (
-        <NewsItem
-          file_name={item.file_name}
-          alt={item.alt}
-          title={item.title}
-          content={item.content}
-          link={item.link}
-        />
-      ))}
+    <div className={s.wrapper}>
+      <div className={s.title}>
+        <h1>LATEST NEWS STORIES & ARTICLES</h1>
+      </div>
+      <div className={s.container}>
+        {itemList.map((item) => (
+          <div key={item.file_name} className={s.item}>
+            <NewsItem
+              file_name={item.file_name}
+              alt={item.alt}
+              title={item.title}
+              content={item.content}
+              link={item.link}
+            />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
