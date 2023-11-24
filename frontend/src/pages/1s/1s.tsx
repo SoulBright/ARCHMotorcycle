@@ -24,6 +24,11 @@ export const OneS: React.FC<IOneSProps> = (props) => {
     return (
         <div className={s.wrapper}>
             <ScrollToTop />
+            <TextComponent
+                theme='red'
+                content='WARNING! The menu items, buttons, and links for "APPAREL" and "CONTACT" 
+            redirect to the official website of ARCH Motorcycle company!!!'
+            />
             <VideoComponent
                 video='https://www.youtube.com/embed/Rv1hyVTLdpE?si=SwodOT8Jk1ApHFQy'
                 background='1s/ARCH-1S.mp4'
@@ -61,7 +66,7 @@ export const OneS: React.FC<IOneSProps> = (props) => {
                 alt='About 1S SPORT FORWARD'
             />
             <Features
-            theme='light'
+                theme='light'
                 title='TAILORED TO YOU'
                 content='The ARCH 1s features a bespoke aesthetic and ergonomic package tailoring the fit and finish of the motorcycle
                  to its owner. Tailoring begins with the creation of your aesthetic package followed by an ergonomic fitting.

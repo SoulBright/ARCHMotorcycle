@@ -16,6 +16,14 @@
     }
 }
 
+.redTheme {
+    background-color: $background-color;
+
+    span {
+        color: $font-red-color;
+    }
+}
+
 .wrapper {
     padding: 50px 10px;
     position: relative;
@@ -42,7 +50,7 @@
         max-width: 1360px;
         padding: 2% 0;
         margin: 0;
-        
+
         span {
             padding: 1% 0;
         }

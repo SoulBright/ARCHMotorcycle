@@ -1,18 +1,5 @@
 @import '../styles/variables';
 
-.warning {
-    text-align: center;
-    background-color: $background-color;
-    user-select: none;
-}
-
-.warning>h1 {
-    font-size: clamp(20px, 5vw, 32px);
-    font-weight: 400;
-    color: $font-red-color;
-    padding: 0 10% 10px 10%;
-}
-
 .header_wrapper {
     position: relative;
     height: 90px;

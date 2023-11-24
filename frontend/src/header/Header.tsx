@@ -26,9 +26,6 @@ export const Header: React.FC<IHeaderProps> = (props) => {
         </div>
         <MenuIco className={s.menu_ico} onClick={() => setModalMenuIsOpen(true)} />
       </div>
-      <div className={s.warning}>
-        <h1>WARNING! The menu items, buttons, and links for "APPAREL" and "CONTACT" redirect to the official website of ARCH Motorcycle company!!!</h1>
-      </div>
       <MenuModal
         isOpen={modalMenuIsOpen}
         onClose={() => setModalMenuIsOpen(false)}

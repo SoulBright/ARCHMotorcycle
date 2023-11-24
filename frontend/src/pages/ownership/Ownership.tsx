@@ -21,6 +21,11 @@ export const Ownership: React.FC<IOwnershipProps> = (props) => {
     <div>
       <div className={s.wrapper}>
         <ScrollToTop />
+        <TextComponent
+          theme='red'
+          content='WARNING! The menu items, buttons, and links for "APPAREL" and "CONTACT" 
+        redirect to the official website of ARCH Motorcycle company!!!'
+        />
         <VideoComponent
           video='https://www.youtube.com/embed/m-f5ZmMKEOE?si=UIZunDDUdf27Lg4Q'
           background='ownership/Ownership.mp4'

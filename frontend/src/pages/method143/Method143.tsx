@@ -21,6 +21,11 @@ export const Method143: React.FC<IMethod143Props> = (props) => {
     return (
         <div className={s.wrapper}>
             <ScrollToTop />
+            <TextComponent
+                theme='red'
+                content='WARNING! The menu items, buttons, and links for "APPAREL" and "CONTACT" 
+            redirect to the official website of ARCH Motorcycle company!!!'
+            />
             <VideoComponent
                 video='https://www.youtube.com/embed/XonQsKijRV4?si=fXllWF3-WzMFgfib'
                 background='method143/Method_143.mp4'

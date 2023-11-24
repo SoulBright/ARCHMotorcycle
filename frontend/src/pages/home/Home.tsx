@@ -9,6 +9,7 @@ import { Benefits } from './components/benefits/Benefits';
 import { PhotoAndTextLeft } from '../../components/photoAndText/PhotoAndTextLeft';
 import { Apparel } from './components/apparel/Apparel';
 import { ScrollToTop } from '../../components/scrollToTop/ScrollToTop';
+import { TextComponent } from '../../components/textComponent/TextComponent';
 
 const API_URL = process.env.REACT_APP_API_URL;
 
@@ -18,6 +19,11 @@ export const Home: React.FC<IHomeProps> = (props) => {
   return (
     <div>
       <ScrollToTop />
+      <TextComponent
+        theme='red'
+        content='WARNING! The menu items, buttons, and links for "APPAREL" and "CONTACT" 
+      redirect to the official website of ARCH Motorcycle company!!!'
+      />
       <VideoComponent
         video='https://www.youtube.com/embed/2Qj1X1eJkqs?si=Mhf2tO21Q6sUtVR6'
         background='ARCH_Homepage_Video.mp4' />
