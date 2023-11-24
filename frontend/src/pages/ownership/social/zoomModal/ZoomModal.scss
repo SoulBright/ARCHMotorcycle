@@ -1,0 +1,64 @@
+@import '../../../../styles/variables.scss';
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    overflow: auto;
+    transition: opacity 2s;
+    z-index: 9999;
+};
+
+.modal_wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+};
+
+.modal_close_button * {
+    fill: $ico-light-color;
+};
+
+.modal_close_button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 56px;
+    cursor: pointer;
+    z-index: 9999;
+};
+
+.modal_content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+};
+
+/* open */
+
+.modal--entering,
+.modal--entered {
+    opacity: 1;
+};
+
+/* close */
+
+.modal--exiting,
+.modal--exited {
+    opacity: 0;
+};

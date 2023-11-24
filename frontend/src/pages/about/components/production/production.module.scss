@@ -1,0 +1,74 @@
+@import '../../../../styles/variables.scss';
+
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0 50px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    padding: 2% 0;
+    color: $font-dark-color;
+    background-color: $background-color-light;
+}
+
+.img_container {
+    position: relative;
+    width: 100%;
+
+    img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+.content {
+    padding: 8px 35px 0;
+    margin-bottom: 30px;
+
+    span {
+        font-weight: 200;
+        line-height: 1.4em;
+        letter-spacing: 1px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .content {
+        padding: 8px 70px 0;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .container {
+        width: 100%;
+        height: auto;
+        padding-top: 50px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .img_container {
+        width: 55vw;
+        max-width: 1200px;
+        height: auto;
+    }
+
+    .content {
+        width: 45vw;
+        padding: 0 40px 0 50px;
+        top: 0;
+        left: 10%;
+    }
+}
+
+
+
+@media screen and (min-width: 1919px) {
+    .img_container {
+        margin-left: 47px;
+    }
+}

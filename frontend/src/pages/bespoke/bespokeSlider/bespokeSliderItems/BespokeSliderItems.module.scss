@@ -1,0 +1,31 @@
+@import '../../../../styles/variables.scss';
+
+.wrapper{
+    width: 100%;
+    position: relative;
+    display: flex;
+    border: 1px solid $button-light-color;
+    margin: 10px 5%;
+    cursor: pointer;
+
+    img {
+        width: 100%;
+    }
+}
+
+.number{
+    position: absolute;
+    color: $font-dark-color;
+    padding: 16px;
+    opacity: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .wrapper{
+        margin: 10px 3%;
+    }
+
+    .number{
+        opacity: 1;
+    }
+}
