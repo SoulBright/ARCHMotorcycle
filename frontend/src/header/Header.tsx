@@ -9,6 +9,7 @@ import { MenuItems } from './variables/MenuItems';
 import s from './Header.module.scss';
 import '../styles/variables.scss';
 
+const API_URL = process.env.REACT_APP_API_URL;
 
 interface IHeaderProps { };
 
@@ -19,7 +20,7 @@ export const Header: React.FC<IHeaderProps> = (props) => {
     <header>
       <div className={s.header_wrapper}>
         <div className={s.logo_container}>
-          <a href='http://localhost:3000/'>
+          <a href={`${API_URL}`}>
             <img src={process.env.PUBLIC_URL + '/images/Logo.png'} className='logo' alt='Логотип'></img>
           </a>
         </div>

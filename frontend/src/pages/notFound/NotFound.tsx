@@ -3,6 +3,8 @@ import * as React from 'react';
 import s from './NotFound.module.scss';
 import { MyButton } from '../../UI/button/MyButton';
 
+const API_URL = process.env.REACT_APP_API_URL;
+
 interface INotFoundProps {
 }
 
@@ -19,7 +21,7 @@ export const NotFound: React.FC<INotFoundProps> = (props) => {
                         Let us give you a ride home by clicking below.
                     </p>
                     <MyButton theme='dark'>
-                        <a href="http://localhost:3000/">BACK TO HOME</a>
+                        <a href={`${API_URL}`}>BACK TO HOME</a>
                     </MyButton>
                 </div>
             </div>

@@ -10,6 +10,8 @@ import { PhotoAndTextLeft } from '../../components/photoAndText/PhotoAndTextLeft
 import { Apparel } from './components/apparel/Apparel';
 import { ScrollToTop } from '../../components/scrollToTop/ScrollToTop';
 
+const API_URL = process.env.REACT_APP_API_URL;
+
 interface IHomeProps { };
 
 export const Home: React.FC<IHomeProps> = (props) => {
@@ -26,7 +28,7 @@ export const Home: React.FC<IHomeProps> = (props) => {
         file_name_m='bespoke_mobile_img.jpg'
         file_name_l='bespoke_img.jpg'
         alt='Bespoke'
-        link='http://localhost:3000/bespoke'
+        link={`${API_URL}/bespoke`}
         title='Bespoke'
         content='There is a unique feeling walking up to your machine, 
         one that you co-designed and have entrusted us to curate. 
@@ -41,7 +43,7 @@ export const Home: React.FC<IHomeProps> = (props) => {
         file_name_m='about_arch_mobile.jpg'
         file_name_l='about_arch.jpg'
         alt='About_arch'
-        link='http://localhost:3000/about'
+        link={`${API_URL}/about`}
         title='About arch'
         content='At ARCH Motorcycle we employ creativity and innovation to challenge conventional motorcycle design. 
         We are driven by passion and a relentless commitment to develop the next chapter in the story of American motorcycling.'

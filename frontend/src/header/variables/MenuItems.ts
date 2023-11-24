@@ -1,47 +1,49 @@
 import { TypeMenu } from "../../types"
 
+const API_URL = process.env.REACT_APP_API_URL;
+
 export const MenuItems: TypeMenu[] = [
     {
         id: 1,
         title: 'Home',
         serial_number: 1,
-        url: 'http://localhost:3000/'
+        url: `${API_URL}`
     },
     {
         id: 2,
         title: 'About',
         serial_number: 2,
-        url: 'http://localhost:3000/about'
+        url: `${API_URL}/about`
     },
     {
         id: 3,
         title: 'Bespoke',
         serial_number: 3,
-        url: 'http://localhost:3000/bespoke'
+        url: `${API_URL}/bespoke`
     },
     {
         id: 4,
         title: 'Ownership',
         serial_number: 4,
-        url: 'http://localhost:3000/ownership'
+        url: `${API_URL}/ownership`
     },
     {
         id: 5,
         title: 'krgt-1',
         serial_number: 5,
-        url: 'http://localhost:3000/arch-krgt-1/'
+        url: `${API_URL}/arch-krgt-1/`
     },
     {
         id: 6,
         title: '1s',
         serial_number: 6,
-        url: 'http://localhost:3000/arch-1s'
+        url: `${API_URL}/arch-1s`
     },
     {
         id: 7,
         title: 'method 143',
         serial_number: 7,
-        url: 'http://localhost:3000/arch-method143/'
+        url: `${API_URL}/arch-method143/`
     },
     {
         id: 8,
@@ -53,7 +55,7 @@ export const MenuItems: TypeMenu[] = [
         id: 9,
         title: 'news',
         serial_number: 9,
-        url: 'http://localhost:3000/news'
+        url: `${API_URL}/news`
     },
     {
         id: 10,
