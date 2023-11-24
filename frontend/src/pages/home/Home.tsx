@@ -21,7 +21,7 @@ export const Home: React.FC<IHomeProps> = (props) => {
       <ScrollToTop />
       <TextComponent
         theme='red'
-        content='WARNING! The menu items, buttons, and links for "APPAREL" and "CONTACT" 
+        content='DISCLAIMER! The menu items, buttons, and links for "APPAREL" and "CONTACT" 
       redirect to the official website of ARCH Motorcycle company!!!'
       />
       <VideoComponent
