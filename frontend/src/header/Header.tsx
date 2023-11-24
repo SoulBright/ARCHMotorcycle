@@ -4,9 +4,11 @@ import { useState } from 'react';
 import { MenuModal } from './menuModal/MenuModal';
 import { Menu } from './menu/Menu';
 import { ReactComponent as MenuIco } from './menu_burger_icon.svg';
+import { MenuItems } from './variables/MenuItems';
 
 import s from './Header.module.scss';
 import '../styles/variables.scss';
+
 
 interface IHeaderProps { };
 
@@ -30,7 +32,9 @@ export const Header: React.FC<IHeaderProps> = (props) => {
         isOpen={modalMenuIsOpen}
         onClose={() => setModalMenuIsOpen(false)}
       >
-        <Menu />
+        <Menu
+          itemList={MenuItems}
+        />
       </MenuModal>
 
     </header>
