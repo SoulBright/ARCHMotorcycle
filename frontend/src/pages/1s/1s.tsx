@@ -24,11 +24,11 @@ export const OneS: React.FC<IOneSProps> = (props) => {
     return (
         <div className={s.wrapper}>
             <ScrollToTop />
-            <TextComponent
+            {/* <TextComponent
                 theme='red'
                 content='DISCLAIMER! The menu items, buttons, and links for "APPAREL" and "CONTACT" 
             redirect to the official website of ARCH Motorcycle company!!!'
-            />
+            /> */}
             <VideoComponent
                 video='https://www.youtube.com/embed/Rv1hyVTLdpE?si=SwodOT8Jk1ApHFQy'
                 background='1s/ARCH-1S.mp4'

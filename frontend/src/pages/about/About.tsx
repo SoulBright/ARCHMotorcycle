@@ -8,7 +8,7 @@ import { PhotoAndTextRight } from '../../components/photoAndText/PhotoAndTextRig
 import { Production } from './components/production/Production';
 import { Design } from './components/design/Design';
 import { ComponentSlider } from '../../components/componentSlider/ComponentSlider'
-import { TextComponent } from '../../components/textComponent/TextComponent';
+// import { TextComponent } from '../../components/textComponent/TextComponent';
 
 import { PhilosophyItemsList } from './vareables/variables/PhilosophyItemsList';
 
@@ -19,11 +19,11 @@ export const About: React.FC<IAboutProps> = (props) => {
         <div>
             <div className={s.wrapper}>
                 <ScrollToTop />
-                <TextComponent
+                {/* <TextComponent
                     theme='red'
                     content='DISCLAIMER! The menu items, buttons, and links for "APPAREL" and "CONTACT" 
                 redirect to the official website of ARCH Motorcycle company!!!'
-                />
+                /> */}
                 <VideoComponent
                     video='https://www.youtube.com/embed/g33LEbg63SU?si=Ndv6zzVmpT2wy1Wu'
                     background='about/ARCH_about_top.mp4'

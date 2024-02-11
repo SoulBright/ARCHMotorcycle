@@ -45,22 +45,22 @@ export const MenuItems: TypeMenu[] = [
         serial_number: 7,
         url: `${API_URL}/arch-method143/`
     },
-    {
-        id: 8,
-        title: 'apparel',
-        serial_number: 8,
-        url: 'https://apparel.archmotorcycle.com/'
-    },
+    // {
+    //     id: 8,
+    //     title: 'apparel',
+    //     serial_number: 8,
+    //     url: 'https://apparel.archmotorcycle.com/'
+    // },
     {
         id: 9,
         title: 'news',
         serial_number: 9,
         url: `${API_URL}/news`
     },
-    {
-        id: 10,
-        title: 'contact',
-        serial_number: 10,
-        url: 'https://archmotorcycle.com/contact/'
-    }
+    // {
+    //     id: 10,
+    //     title: 'contact',
+    //     serial_number: 10,
+    //     url: 'https://archmotorcycle.com/contact/'
+    // }
 ]

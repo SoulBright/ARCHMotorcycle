@@ -25,11 +25,11 @@ export const KRGT1: React.FC<IKRGT1Props> = (props) => {
     return (
         <div className={s.wrapper}>
             <ScrollToTop />
-            <TextComponent
+            {/* <TextComponent
                 theme='red'
                 content='DISCLAIMER! The menu items, buttons, and links for "APPAREL" and "CONTACT" 
             redirect to the official website of ARCH Motorcycle company!!!'
-            />
+            /> */}
             <VideoComponent
                 video='https://www.youtube.com/embed/kY5mDowyo34?si=pR5xh7rnLD32dyUn'
                 background='krgt-1/ARCH_KRGT1.mp4'

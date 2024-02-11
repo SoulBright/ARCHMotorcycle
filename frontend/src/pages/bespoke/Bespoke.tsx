@@ -30,11 +30,11 @@ export const Bespoke: React.FC<IBespokeProps> = (props) => {
     <div>
       <div className={s.wrapper}>
         <ScrollToTop />
-        <TextComponent
+        {/* <TextComponent
           theme='red'
           content='DISCLAIMER! The menu items, buttons, and links for "APPAREL" and "CONTACT" 
         redirect to the official website of ARCH Motorcycle company!!!'
-        />
+        /> */}
         <VideoComponent
           video='https://www.youtube.com/embed/9fq0nxyRRqM?si=LKMeVEXuFElTGHFT'
           background='bespoke/bespoke.mp4' />
